@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Шпион ВК: слежка ВК за человеком, диалогами, лайками и комментариями, друзьями и подписчиками</title>
+    <meta name="description" content="Здесь вы можете следить за  любом пользователя социальной сети ВКонтакте онлайн. Бесплатный онлайн шпион за человеком в VK диалогами, лайками и комментариями, друзьями и подписчиками, стеной и онлайном любого пользователя" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Шпион ВК: слежка ВК за человеком, диалогами, лайками и комментариями, друзьями и подписчиками" />
+		<meta property="og:description" content="Здесь вы можете следить за  любом пользователя социальной сети ВКонтакте онлайн. Бесплатный онлайн шпион за человеком в VK диалогами, лайками и комментариями, друзьями и подписчиками, стеной и онлайном любого пользователя" />
+		<meta property="og:url" content="https://kogdavseti.ru/" />
+    <link rel="stylesheet" href="./styles/slick.css" />
+    <link id="favicon" rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles/styles.min.css" />
+  </head>
+  <body>
+    <div class="popup popup--start-spying">
+      <button class="close-btn popup__close-btn close-popup-item"></button>
+      <div class="popup__backdrop close-popup-item"></div>
+      <div class="popup-content">
+        <div class="popup-content__controls">
+          <a href="/" class="popup-content__logo logo logo--black"></a>
+          <button
+            class="close-btn popup-content__close-btn close-popup-item"
+          ></button>
+        </div>
+        <p class="popup-content__description">
+          Для начала мониторинга за интересующим вас пользователем ВК зарегистрируйтесь на сервисе
+        </p>
+        <form class="popup-form">
+          <div class="base-field popup-form__input">
+            <div class="base-select select-social">
+              <div class="base-select__label">соц.сеть</div>
+              <div class="base-select__field">
+                <div
+                  style="
+                    background-image: url('./images/icons/base-select-default.svg');
+                  "
+                  class="base-select__field-img"
+                ></div>
+                <div class="base-select__field-text">Выберите соц.сеть</div>
+                <input hidden type="text" class="base-select__field-input" />
+              </div>
+              <div class="base-select__list">
+                <div class="base-select__list-item" data-social="vkontakte">
+                  <div
+                    class="base-select__list-item-img"
+                    style="
+                      background-image: url('./images/base-select-vkontakte.png');
+                    "
+                  ></div>
+                  ВКонтакте
+                </div>
+                <div class="base-select__list-item" data-social="instagram">
+                  <div
+                    class="base-select__list-item-img"
+                    style="
+                      background-image: url('./images/base-select-instagram.png');
+                    "
+                  ></div>
+                  Инстаграм
+                </div>
+                <div class="base-select__list-item" data-social="whats-app">
+                  <div
+                    class="base-select__list-item-img"
+                    style="
+                      background-image: url('./images/base-select-whats-app.png');
+                    "
+                  ></div>
+                  WhatsApp
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">аккаунт</div>
+              <input
+                type="text"
+                class="base-input__field"
+                placeholder="Укажите аккаунт или вставьте ссылку"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="base-button popup-form__btn base-button--blue-btn-hover"
+          >
+            Добавить пользователя
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--sign-in">
+      <button class="close-btn popup__close-btn close-popup-item"></button>
+      <div class="popup__backdrop close-popup-item"></div>
+      <div class="popup-content">
+        <div class="popup-content__controls">
+          <a href="/" class="popup-content__logo logo logo--black"></a>
+          <button
+            class="close-btn popup-content__close-btn close-popup-item"
+          ></button>
+        </div>
+        <p class="popup-content__description">
+          Чтобы войти в личный кабинет - введите данные, указанные при регистрации
+        </p>
+        <form class="popup-form">
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">логин</div>
+              <input
+                type="text"
+                class="base-input__field"
+                placeholder="Укажите логин"
+              />
+            </div>
+          </div>
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">пароль</div>
+              <input
+                type="password"
+                class="base-input__field"
+                placeholder="Введите пароль"
+              />
+            </div>
+          </div>
+          <div class="popup-form__controls">
+            <button
+              type="submit"
+              class="base-button popup-form__btn base-button--blue-btn-hover"
+            >
+              Войти в кабинет
+            </button>
+            <div class="popup-form__help-btns">
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-up-popup"
+              >
+                Зарегистрироваться
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-reset-password-popup"
+              >
+                Забыли пароль
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--sign-up">
+      <button class="close-btn popup__close-btn close-popup-item"></button>
+      <div class="popup__backdrop close-popup-item"></div>
+      <div class="popup-content">
+        <div class="popup-content__controls">
+          <a href="/" class="popup-content__logo logo logo--black"></a>
+          <button
+            class="close-btn popup-content__close-btn close-popup-item"
+          ></button>
+        </div>
+        <p class="popup-content__description">
+          Для начала мониторинга за интересующим вас пользователем ВК зарегистрируйтесь на сервисе
+        </p>
+        <form class="popup-form">
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">e-mail</div>
+              <input
+                type="email"
+                class="base-input__field"
+                placeholder="Укажите E-mail"
+              />
+            </div>
+          </div>
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">пароль. создание</div>
+              <input
+                type="password"
+                class="base-input__field"
+                placeholder="Придумайте пароль"
+              />
+            </div>
+          </div>
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">пароль. Подтверждение</div>
+              <input
+                type="password"
+                class="base-input__field"
+                placeholder="Повторите пароль"
+              />
+            </div>
+          </div>
+          <div class="popup-form__controls">
+            <button
+              type="submit"
+              class="base-button popup-form__btn base-button--blue-btn-hover"
+            >
+              Зарегистрироваться
+            </button>
+            <div class="popup-form__help-btns">
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-in-popup"
+              >
+                Уже есть аккаунт
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--reset-password">
+      <button class="close-btn popup__close-btn close-popup-item"></button>
+      <div class="popup__backdrop close-popup-item"></div>
+      <div class="popup-content">
+        <div class="popup-content__controls">
+          <a href="/" class="popup-content__logo logo logo--black"></a>
+          <button
+            class="close-btn popup-content__close-btn close-popup-item"
+          ></button>
+        </div>
+        <p class="popup-content__description">
+          Для сброса пароля укажите почту, введенную при регистрации - на неё мы отправим письмо со ссылкой для сброса пароля
+        </p>
+        <form class="popup-form">
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">e-mail</div>
+              <input
+                type="email"
+                class="base-input__field"
+                placeholder="Укажите E-mail"
+              />
+            </div>
+          </div>
+          <div class="popup-form__controls">
+            <button
+              type="submit"
+              class="base-button popup-form__btn base-button--blue-btn-hover"
+            >
+              Сбросить пароль
+            </button>
+            <div class="popup-form__help-btns">
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-up-popup"
+              >
+                Зарегистрироваться
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-in-popup"
+              >
+                Уже есть аккаунт
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--feedback">
+      <button class="close-btn popup__close-btn close-popup-item"></button>
+      <div class="popup__backdrop close-popup-item"></div>
+      <div class="popup-content">
+        <div class="popup-content__controls">
+          <a href="/" class="popup-content__logo logo logo--black"></a>
+          <button
+            class="close-btn popup-content__close-btn close-popup-item"
+          ></button>
+        </div>
+        <p class="popup-content__description">
+          Если у вас есть идеи или замечания по нашему сервису, вы можете рассказать про них, мы обязательно с ними ознакомимся
+        </p>
+        <form class="popup-form">
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">почта для ответа</div>
+              <input
+                type="email"
+                class="base-input__field"
+                placeholder="Укажите эл.почта"
+              />
+            </div>
+          </div>
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">почта для ответа</div>
+              <textarea
+                class="base-input__textarea"
+                placeholder="Текст вашего сообщения"
+              ></textarea>
+            </div>
+          </div>
+          <div class="popup-form__controls">
+            <button
+              type="submit"
+              class="base-button popup-form__btn base-button--blue-btn-hover"
+            >
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div class="drawer">
+      <div class="drawer__backdrop"></div>
+      <div class="drawer-container">
+        <div>
+          <div class="drawer-controls">
+            <a href="/" class="logo logo--black drawer-controls__logo"></a>
+            <div class="close-btn drawer-controls__close-btn"></div>
+          </div>
+          <nav class="drawer-navigation">
+            <ul class="drawer-navigation__list">
+              <li class="drawer-navigation__list-item">
+                <a href="#unique-service" class="drawer-navigation__list-link">Преимущества</a>
+              </li>
+              <li class="drawer-navigation__list-item">
+                <a href="#reports" class="drawer-navigation__list-link">Возможности</a>
+              </li>
+              <li class="drawer-navigation__list-item">
+                <a href="#recommend" class="drawer-navigation__list-link">Для кого</a>
+              </li>
+              <li class="drawer-navigation__list-item">
+                <a href="#reviews" class="drawer-navigation__list-link">Отзывы</a>
+              </li>
+              <li class="drawer-navigation__list-item">
+                <a href="#faq" class="drawer-navigation__list-link">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="drawer-btns">
+          <button class="drawer-btns__item base-button for-feedback-popup">
+            Обратная связь
+          </button>
+          <button class="drawer-btns__item base-button for-sign-in-popup">
+            Войти в кабинет
+          </button>
+          <button
+            class="
+              drawer-btns__item drawer-btns__item--start
+              base-button
+              for-sign-up-popup
+              base-button--blue-btn-hover
+            "
+          >
+            Начать слежку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header class="header-wrap">
+      <div class="header container">
+        <a href="/" class="header__logo logo">Кто в сети</a>
+        <nav class="header-navigation">
+          <ul class="header-navigation__list">
+            <li class="header-navigation__list-item">
+              <a href="#unique-service" class="header-navigation__list-link">Преимущества</a>
+            </li>
+            <li class="header-navigation__list-item">
+              <a href="#reports" class="header-navigation__list-link">Возможности</a>
+            </li>
+            <li class="header-navigation__list-item">
+              <a href="#recommend" class="header-navigation__list-link">Для кого</a>
+            </li>
+            <li class="header-navigation__list-item">
+              <a href="#reviews" class="header-navigation__list-link">Отзывы</a>
+            </li>
+            <li class="header-navigation__list-item">
+              <a href="#faq" class="header-navigation__list-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="
+              base-button base-button--small
+              header-controls__btn header-controls__btn--lk
+              for-sign-in-popup
+            "
+          ></button>
+          <button
+            class="
+              base-button base-button--small
+              header-controls__btn header-controls__btn--start
+              for-sign-up-popup
+            "
+          >
+            Начать слежку
+          </button>
+          <button class="header-controls__btn header-controls__btn--hamburger">
+            <div class="header-controls__btn-item"></div>
+            <div class="header-controls__btn-item"></div>
+            <div class="header-controls__btn-item"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-banner container">
+      <div class="main-banner__content-wrapper">
+        <h1 class="main-banner__title">
+          Онлайн шпион ВК для слежки
+        </h1>
+        <p class="main-banner__description">
+          за лайками и комментариями, друзьями и подписчиками, сторис интересующего пользователя
+        </p>
+        <div class="main-banner-controls">
+          <button
+            class="
+              main-banner-controls__btn main-banner-controls__btn--start
+              base-button base-button--large base-button--uppercase
+              for-sign-up-popup
+              base-button--blue-btn-hover
+            "
+          >
+            Начать слежку
+          </button>
+        </div>
+      </div>
+      <img src="./images/first-screen-img.svg" alt="Смотри за активностью пользователя ВКонтакте" class="main-banner__img">
+    </div>
+
+    <div id="unique-service" class="unique-service">
+      <div class="container">
+        <h2 class="unique-service__title general-title">Преимущества сервиса</h2>
+        <p class="unique-service__description general-description">
+          Среди всех программ для слежки, kogdavseti.ru — оптимальное решение, гарантирующее безопасность и конфиденциальность во время слежения за активностью профиля ВКонтакте интересующего пользователя
+        </p>
+      </div>
+      <div class="unique-service-cards">
+        <div class="unique-service-cards__item">
+          <div class="unique-service-cards__item-img unique-service-cards__item-img_1"></div>
+          <h3 class="unique-service-cards__item-title">
+            Доступ к базе данных профиля
+          </h3>
+          <p class="unique-service-cards__item-description">
+            Можно отследить, когда и какие материалы публикуют в профиле, прочитать историю сообщений.
+          </p>
+        </div>
+        <div class="unique-service-cards__item">
+          <div class="unique-service-cards__item-img unique-service-cards__item-img_2"></div>
+          <h3 class="unique-service-cards__item-title">
+            Анонимность
+          </h3>
+          <p class="unique-service-cards__item-description">
+            Вы будете следить за профилем ВК абсолютно анонимно. Никто никогда не узнает, что вы следите за ним
+          </p>
+        </div>
+        <div class="unique-service-cards__item">
+          <div class="unique-service-cards__item-img unique-service-cards__item-img_3"></div>
+          <h3 class="unique-service-cards__item-title">
+            Скачивай всю базу данных
+          </h3>
+          <p class="unique-service-cards__item-description">
+            Есть возможность скачать всю базу данных профиля на компьютер, смартфон, планшет
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="reports" class="reports-wrap">
+      <div class="reports container">
+        <h2 class="reports__title general-title general-title--light">
+          Что умеет шпион ВК?
+        </h2>
+        <p
+          class="
+            reports__description
+            general-description general-description--light
+          "
+        >
+        Единственный сервис, который составляет полный отчет с точным временем посещения социальной сети интересующего человека. Вставьте ссылку на профиль или номер телефона пользователя. Доступен на всех устройствах.
+        </p>
+      </div>
+      <div class="reports-slider-wrapper">
+        <!-- #1 -->
+        <div class="reports-card">
+          <img src="./images/reports-1.png" alt="Report Image" class="reports-card__img">
+          <h3 class="reports-card__title">Шпион за онлайном и диалогами</h3>
+          <p class="reports-card__text">Следите за перепиской пользователя, узнайте с кем общаться ваша цель</p>
+        </div>
+        <!-- #2 -->
+        <div class="reports-card">
+          <img src="./images/reports-1.png" alt="Report Image" class="reports-card__img">
+          <h3 class="reports-card__title">Шпион за друзьями и подписчиками</h3>
+          <p class="reports-card__text">Наблюдайте за друзьями, подписчиками и подписками пользователей. Выявляйте крытых друзей</p>
+        </div>
+        <!-- #3 -->
+        <div class="reports-card">
+          <img src="./images/reports-1.png" alt="Report Image" class="reports-card__img">
+          <h3 class="reports-card__title">Шпион за лайками и комментариями</h3>
+          <p class="reports-card__text">Изучайте лайки и комментарии пользователей. Смотрите, кто чаще всего лайкает посты вашей цели</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-banner container">
+      <div class="cta-banner__content">
+        <h2 class="cta-banner__title general-title">Начни тестовый период бесплатно прямо сейчас!</h2>
+        <div class="cta-banner__description general-description">Оцените все преимущества сервиса</div>
+        <button class=" main-banner-controls__btn main-banner-controls__btn--start base-button base-button--large base-button--uppercase for-sign-up-popup base-button--blue-btn-hover">Начать слежку</button>
+      </div>
+      <img src="./images/cta-img.svg" alt="Call to action image" class="cta-banner__img">
+    </div>
+
+    <section class="recommend" id="recommend">
+      <div class="container">
+        <h2 class="recommend__title general-title">За кем следить</h2>
+        <p class="general-description recommend__description">
+          Слежка за профилем ВК может быть очень полезна в разных ситуациях. Узнаете о тайнах и увлечениях любого пользователя
+        </p>
+      </div>
+      <div class="recommend-card-wrapper">
+        <!-- 1 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-half.svg" alt="Вторая половинка"></div>
+          <h3 class="recommend-card__title">Вторая половинка</h3>
+          <p class="recommend-card__text">Узнайте кому ставит лайки любимый человек и кто лайкает его</p>
+        </div>
+  
+        <!-- 2 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-husband.svg" alt="Муж"></div>
+          <h3 class="recommend-card__title">Муж</h3>
+          <p class="recommend-card__text">Проверьте мужа на измены, смотрите анонимно с кем он переписывается</p>
+        </div>
+  
+        <!-- 3 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-bride.svg" alt="Жена"></div>
+          <h3 class="recommend-card__title">Жена</h3>
+          <p class="recommend-card__text">Смотрите, с кем общается ваша жена - с помощью шпион ВК</p>
+        </div>
+  
+        <!-- 4 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-liked.svg" alt="Нравится"></div>
+          <h3 class="recommend-card__title">Тебе кто-то нравится</h3>
+          <p class="recommend-card__text">Узнайте как можно больше о человеке, который вам нравится</p>
+        </div>
+  
+        <!-- 5 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-exes.svg" alt="Бывшие"></div>
+          <h3 class="recommend-card__title">Бывший
+            или бывшая</h3>
+          <p class="recommend-card__text">Узнайте, с кем теперь встречается бывшая любовь, смотрите профиль ВК анонимно</p>
+        </div>
+  
+        <!-- 6 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-friends.svg" alt="Подруга"></div>
+          <h3 class="recommend-card__title">Подруга</h3>
+          <p class="recommend-card__text">Подозреваешь, что подруге нравится твой парень? Шпион ВК онлайн поможет выяснить правду</p>
+        </div>
+  
+        <!-- 7 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-children.svg" alt="Дети"></div>
+          <h3 class="recommend-card__title">Ваши дети</h3>
+          <p class="recommend-card__text">Проверьте, с кем общаются ваши дети и какие посты лайкают и комментируют</p>
+        </div>
+  
+        <!-- 8 -->
+        <div class="recommend-card tile">
+          <div class="recommend-card__avatar"><img src="./images/icons/rcmnd-other.svg" alt="Знакомые"></div>
+          <h3 class="recommend-card__title">Знакомые</h3>
+          <p class="recommend-card__text">Наблюдайте за человеком, который просится к вам в друзья</p>
+        </div>
+  
+      </div>
+    </section>
+
+    <div id="reviews" class="reviews">
+      <h2 class="reviews__title general-title container">Отзывы первых клиентов</h2>
+      <div class="reviews-cards">
+        <div class="reviews-cards__item">
+          <div class="reviews-cards__item-description">
+            <p class="reviews-cards__item-description-text">
+              Пользуюсь сервисом регулярно. Первый раз были подозрения, что муж изменяет. Все проверила. Мои догадки не подтвердились, зато я узнала много нового об его увлечениях и теперь поддерживаю его в этом.
+            </p>
+          </div>
+          <div class="reviews-cards__item-user">
+            <div class="reviews-cards__item-user-container">
+              <div class="reviews-cards__item-user-title">
+                user-252
+              </div>
+              <div class="reviews-cards__item-user-description">
+                Следит за своей мужем
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-cards__item">
+          <div class="reviews-cards__item-description">
+            <p class="reviews-cards__item-description-text">
+              Слежу за перепиской своего сына в ВК втайне от него. Сплю спокойно, потому что знаю, с кем он общается и что будет делать вне дома
+            </p>
+          </div>
+          <div class="reviews-cards__item-user">
+            <div class="reviews-cards__item-user-container">
+              <div class="reviews-cards__item-user-title">
+                user-5788
+              </div>
+              <div class="reviews-cards__item-user-description">
+                Следит за своими детьми
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-cards__item">
+          <div class="reviews-cards__item-description">
+            <p class="reviews-cards__item-description-text">
+              Мне нравится, что я могу в любой момент посмотреть, что делает и с кем общается девушка, которая мне очень нравится. Это мне помогает чаще ее видеть, ведь я читаю из ее переписки где и во сколько она будет
+            </p>
+          </div>
+          <div class="reviews-cards__item-user">
+            <div class="reviews-cards__item-user-container">
+              <div class="reviews-cards__item-user-title">
+                user-63789
+              </div>
+              <div class="reviews-cards__item-user-description">
+                Следит за своей девушкой
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="faq container" id="faq">
+      <h2 class="faq__title general-title">Вопросы-ответы</h2>
+      <p class="general-description faq__description">Мы собрали самые популярные вопросы по работе сервиса </p>
+      <div class="faq__content">
+        <div class="content__column">
+          <!-- #1 -->
+          <div class="faq-card">
+            <div class="faq-card__header">
+            <div class="title">Нужно ли регистрироваться на сервисе?</div>
+            <img class="icon" src="./images/icons/Arrow-Down.svg" alt="">
+            </div>
+            <div class="faq-card__text">
+            <p>
+              Да, в личном кабинете есть много разделов и функций, которые вам могут понадобиться! Зарегистрируйтесь в личном кабинете, укажите ваш актуальный email-адрес и придумайте пароль. Пользуйтесь сервисом бесплатно
+            </p>
+            </div>
+          </div>
+          <!-- #2 -->
+          <div class="faq-card">
+            <div class="faq-card__header">
+            <div class="title">Нужен ли профиль в ВК для просмотра другого аккаунта?</div>
+            <img class="icon" src="./images/icons/Arrow-Down.svg" alt="">
+            </div>
+            <div class="faq-card__text">
+            <p>
+              Нет, вы можете следить за открытым профилем любого человека в ВК полностью анонимно, даже если сами не зарегистрированы в этой социальной сети.
+              Но для слежки за закрытым аккаунтом нужна авторизация, при этом анализ всё равно будет происходить анонимно
+            </p>
+            </div>
+          </div>
+          <!-- #3 -->
+          <div class="faq-card">
+            <div class="faq-card__header">
+            <div class="title">Какую информацию можно узнать через сервис?</div>
+            <img class="icon" src="./images/icons/Arrow-Down.svg" alt="">
+            </div>
+            <div class="faq-card__text">
+            <p>
+              Через сервис можно следить за профилями друзей и интересующих вас людей, их сообщениями и лайками. Узнайте, с кем переписывается человек в ВК
+            </p>
+            </div>
+          </div>
+          <!-- #4 -->
+          <div class="faq-card">
+            <div class="faq-card__header">
+            <div class="title">На каком устройстве можно использовать сервис?</div>
+            <img class="icon" src="./images/icons/Arrow-Down.svg" alt="">
+            </div>
+            <div class="faq-card__text">
+            <p>
+              Пользоваться сервисом можно на любом гаджете. Организуйте слежку с компьютера, ноутбука или смартфона
+            </p>
+            </div>
+          </div>
+          <!-- #5 -->
+          <div class="faq-card">
+            <div class="faq-card__header">
+            <div class="title">Что можно скачать при помощи сервиса?</div>
+            <img class="icon" src="./images/icons/Arrow-Down.svg" alt="">
+            </div>
+            <div class="faq-card__text">
+            <p>
+              Вам открывается доступ к приватной информации интересующего аккаунта. Вы можете скачивать всю базу данных профиля быстро и абсолютно бесплатно
+            </p>
+            </div>
+          </div>
+      </div>
+      <img src="./images/faq-img.svg" alt="Частые вопросы" class="faq__img">
+    </div>
+  </section>
+
+    <footer class="footer-wrap">
+      <div class="footer container">
+        <div class="footer-special-offer">
+          <h2 class="footer-special-offer__title">
+            Начни бесплатный пробный период!
+          </h2>
+          <button
+            class="
+              footer-special-offer__btn
+              base-button base-button--uppercase base-button--large
+              for-sign-up-popup
+            "
+          >
+            Начать слежку
+          </button>
+        </div>
+        <a href="/" class="footer__logo logo"></a>
+        <div class="footer__container">
+          <nav class="footer-navigation">
+            <div class="footer-navigation__container">
+              <a href="/site-rules" class="footer-navigation__item"
+                >Правила сайта</a
+              >
+              <div class="footer-navigation__container-line"></div>
+              <button class="footer-navigation__item for-feedback-popup">
+                Обратная связь
+              </button>
+            </div>
+            <a href="tel:+74994441320" class="footer-navigation__item"
+              >+7 (499) 444-13-20</a
+            >
+          </nav>
+          <div class="footer-info">
+            <div class="footer-info__container">
+              <div class="footer-info__item">
+                <div class="footer-info__item-container">Адресс:</div>
+                <div class="footer-info__item-container">
+                  Пресненская наб., 12, БЦ Москва, 123317
+                </div>
+              </div>
+              <small class="footer-info__item footer-info__item--copyright"
+                >© 2022 Когда в сети. Все права защищены</small
+              >
+            </div>
+            <div class="footer-info__item">
+              <div class="footer-info__item-container">
+                Индивидуальный предприниматель
+              </div>
+              <div class="footer-info__item-container">
+                Дудик Анатолий Анатольевич
+              </div>
+              <div class="footer-info__item-container">ИНН 391601492516</div>
+              <div class="footer-info__item-container">
+                ОГРНИП 318392600040290
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/sliders-script.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
