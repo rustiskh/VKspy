@@ -34,8 +34,8 @@ $(document).ready(function () {
 		slidesToScroll: 1,
 		infinite: true,
 		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 1500
+		// autoplay: true,
+		// autoplaySpeed: 1500
 	});
 
 	$(".reviews-cards").slick({
