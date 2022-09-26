@@ -215,13 +215,17 @@
             </div>
           </div>
           <div class="base-field popup-form__input">
-            <div class="base-input">
-              <div class="base-input__label">пароль. Подтверждение</div>
-              <input
-                type="password"
-                class="base-input__field"
-                placeholder="Повторите пароль"
-              />
+            <div class="base-select select-social">
+              <div class="base-select__label">Ваш часовой пояс</div>
+              <div class="base-select__field">
+                <div class="base-select__field-text"></div>
+                <input hidden type="text" class="base-select__field-input" />
+              </div>
+              <div class="base-select__list">
+                <div class="base-select__list-item" data-social="3">
+                  UTC+2 (МСК-1)
+                </div>
+              </div>
             </div>
           </div>
           <div class="popup-form__controls">
@@ -328,6 +332,167 @@
                 </svg>
               </button>
             </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup--reset-password-send-code">
+      <button class="close-btn popup__close-btn close-popup-item"></button>
+      <div class="popup__backdrop close-popup-item"></div>
+      <div class="popup-content">
+        <div class="popup-content__controls">
+          <a href="/" class="popup-content__logo logo logo--black"></a>
+          <button
+            class="close-btn popup-content__close-btn close-popup-item"
+          ></button>
+        </div>
+        <p class="popup-content__description">
+          Письмо с ссылкой для сброса пароля отправлено на указанную почту. Проверьте наличие письма и перейдите по ссылке в нем.
+        </p>
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">e-mail</div>
+              <input
+                type="email"
+                class="base-input__field"
+                placeholder="Укажите E-mail"
+              />
+            </div>
+          </div>
+          <div class="popup-form__controls">
+            <button
+              type="submit"
+              class="base-button popup-form__btn base-button--blue-btn-hover"
+            >
+              Сбросить пароль
+            </button>
+            <div class="popup-form__help-btns">
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-up-popup"
+              >
+                Зарегистрироваться
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-in-popup"
+              >
+                Уже есть аккаунт
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form> -->
+      </div>
+    </div>
+
+    <div class="popup popup--reset-password-new">
+      <button class="close-btn popup__close-btn close-popup-item"></button>
+      <div class="popup__backdrop close-popup-item"></div>
+      <div class="popup-content">
+        <div class="popup-content__controls">
+          <a href="/" class="popup-content__logo logo logo--black"></a>
+          <button
+            class="close-btn popup-content__close-btn close-popup-item"
+          ></button>
+        </div>
+        <p class="popup-content__description">
+          Ваш пароль успешно сброшен. Пожалуйста, придумайте новый пароль для доступа в личный кабинет
+        </p>
+        <form class="popup-form">
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">Придумайте пароль</div>
+              <input
+                type="password"
+                class="base-input__field"
+                placeholder="Придумайте новый пароль..."
+              />
+            </div>
+          </div>
+          <div class="base-field popup-form__input">
+            <div class="base-input">
+              <div class="base-input__label">Повторите пароль</div>
+              <input
+                type="password"
+                class="base-input__field"
+                placeholder="Повторите пароль..."
+              />
+            </div>
+          </div>
+          <div class="popup-form__controls">
+            <button
+              type="submit"
+              class="base-button popup-form__btn base-button--blue-btn-hover"
+            >
+              Войти в кабинет
+            </button>
+            <!-- <div class="popup-form__help-btns">
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-up-popup"
+              >
+                Зарегистрироваться
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="popup-form__help-btns-item for-sign-in-popup"
+              >
+                Уже есть аккаунт
+                <svg
+                  class="popup-form__help-btns-item-arrow"
+                  width="5"
+                  height="7"
+                  viewBox="0 0 5 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M-2.64307e-07 0.953369L1 -4.37114e-08L4.5 3.5L1 7L-4.37007e-08 6.00024L2.5 3.5L-2.64307e-07 0.953369Z"
+                    fill="#4D89EE"
+                  />
+                </svg>
+              </button>
+            </div> -->
           </div>
         </form>
       </div>
